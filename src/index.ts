@@ -37,7 +37,9 @@ const lighthouse = async (url: string) => {
 
 const lighthouseInstaller = () => {
   return {
-    name: "lighthouseInstaller",
+    name: "lighthouse",
+    describe: "运行 lighthouse 分析及收集 Web 应用的性能指标",
+    command: "lighthouse",
     setup: (cli: CAC) => {
       cli
         .command("lighthouse", "运行 lighthouse 分析及收集 Web 应用的性能指标")
